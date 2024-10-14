@@ -15,16 +15,28 @@ public class Problem_2 {
 
     public static void main(String[] args) {
 
-        double lenght = 3.4;
+        // variables describe the side of the rectangle
+        double length = 3.4;
         double width = 6.4;
-        double result = areaOfRectangle(lenght, width);
 
-        System.out.println("Length: " + lenght + "\nWidth: " + width + " \nArea of rectangle: " + result);
+        // calculate the area
+        double result = areaOfRectangle(length, width);
+
+        // Printing the Length, Width, and Area
+        System.out.println("Length: " + length + "\nWidth: " + width + " \nArea of rectangle: " + result);
 
     }
 
-    static double areaOfRectangle(double lenght, double width) {
-        return lenght * width;
+
+    /**
+     * computes the area of ractangle
+     * @param length the length of the rectangle
+     * @param width the width of the rectangle
+     * @return returning the area as double 
+     * @author Jamil
+     */
+    static double areaOfRectangle(double length, double width) {
+        return length * width;
     }
 
 }
